@@ -1,0 +1,82 @@
+{
+  "name": "Kanha Music",
+  "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+  "logo": "https://files.catbox.moe/cudd9u.jpg",
+  "keywords": [
+  "python3",
+  "telegram",
+  "bot",
+  "MusicBot",
+  "telegram-bot",
+  "pyrogram"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "6435225",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "4e984ea35f854762dcde906dce426c2d",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot's token from Botfather",
+      "value": "",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "The user id of user whom you would like to add as OWNER.from @AnuXMusicRobot on Telegram.",
+      "value": "7682307978",
+      "required": true
+    },
+   "SUPPORT_CHANNEL": {
+      "description": "Add channel link",
+      "value": "https://t.me/About_Kanhaa",
+      "required": true
+    },
+      "SUPPORT_CHAT": {
+      "description": "Add Chat group & support group Link",
+      "value": "https://t.me/Kanhxduniya",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "A Pyrogram String Session from @Anusession_bot on Telegram.",
+      "value": "",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku account's API key",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your heroku app name",
+      "value": "",
+      "required": false
+    },
+    "LOGGER_ID": {
+      "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+      "value": "-1003318966715",
+      "required": true
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "stack": "container"
+}
