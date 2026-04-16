@@ -71,4 +71,10 @@ async def init():
 
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(init())
+    try:
+        asyncio.run(init())
+    except (KeyboardInterrupt, SystemExit):
+        pass
+    except Exception as e:
+        LOGGER(__name__).error(f"Fatal startup error: {e}")
+        raise
