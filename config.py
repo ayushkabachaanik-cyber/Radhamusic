@@ -26,10 +26,10 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 SONG_DOWNLOAD_DURATION_LIMIT = int(time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00"))
 
 # ✅ Owner & Bot Identity
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002739133823"))
-OWNER_ID = int(getenv("OWNER_ID", "7682307978"))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "@Oyekanhaa") 
-BOT_USERNAME = getenv("BOT_USERNAME", "@Vcznbot")
+LOGGER_ID = int(getenv("LOGGER_ID", "-1003774441740"))
+OWNER_ID = int(getenv("OWNER_ID", "8441236350"))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "II_YOUR_MADARA_DEFAULTER_II") 
+BOT_USERNAME = getenv("BOT_USERNAME", "@gsiugeirbcodbsk_bot")")
 
 # ✅ Command Handler
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
